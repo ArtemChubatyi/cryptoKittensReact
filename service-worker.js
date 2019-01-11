@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cryptoKittens/precache-manifest.e410b8b73a781d2ea9b912926a65e7c1.js"
+  "/cryptoKittensReact/precache-manifest.c4b0f173c29e166fc3d59db9a9d680d5.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/cryptoKittens/index.html", {
+workbox.routing.registerNavigationRoute("/cryptoKittensReact/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
