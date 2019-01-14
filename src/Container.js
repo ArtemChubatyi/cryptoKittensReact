@@ -4,41 +4,71 @@ import KittensList from './KittensList';
 class Container extends Component {
 
     state = {
-        isLoaded: false,
+        isLoading: true,
         dataBase: null,
         counter: 1
     }
+
     fetchData = () => {
-        fetch("https://ma-cats-api.herokuapp.com/api/cats?page=1&per_page=" + (this.state.counter * 12))
+        fetch("https://ma-cats-api.herokuapp.com/api/cats?page=" + this.state.counter + "&per_page=12")
             .then(response => response.json())
             .then(
                 (result) => {
                     this.setState({
-                        isLoaded: true,
                         dataBase: result.cats
                     });
+
                 }
             )
+            .then(() => {
+                setTimeout(() => {
+                    this.setState({
+                        isLoading: false
+                    });
+                }, 1000);
+            })
     }
+    loadNextKittens = () => {
+        this.setState({ isLoading: true }, function afterChangeState() {
+            this.setState({ counter: (this.state.counter + 1) },
+                function afterCounterChange() {
+                    this.fetchData();
+                });
+        })
+
+    }
+
+
+    loadPrewKittens = () => {
+        if (this.state.counter > 1) {
+            this.setState({ counter: (this.state.counter - 1) },
+                function afterCounterChange() {
+                    this.fetchData();
+                });
+        }
+    }
+
 
     componentDidMount() {
         this.fetchData();
     }
-    componentWillUpdate() {
-        this.fetchData();
-    }
+
     render() {
         return (
             <>
                 <div className="container">
-                    {!this.state.isLoaded || !this.state.dataBase ? (<div>Loading...</div>) : (<KittensList kittens={this.state.dataBase} />)}
+                    {this.state.isLoading ? (<div>Loading...</div>) : (<KittensList kittens={this.state.dataBase} />)}
                 </div>
-                <button className="loadMore" onClick={this.loadMoreKittens}>Load More Kittens</button>
+                <div className="list-nav">
+                    <button className="loadMore" onClick={this.loadPrewKittens}>Previous Page</button>
+                    <button className="loadMore" onClick={this.loadNextKittens}>Next Page</button>
+                </div>
+
             </>
         );
     }
 
-    loadMoreKittens = () => this.setState({ counter: (this.state.counter + 1) })
+
 }
 
 export default Container;
