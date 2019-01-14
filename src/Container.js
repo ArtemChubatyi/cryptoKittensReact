@@ -4,8 +4,7 @@ import KittensList from './KittensList';
 class Container extends Component {
 
     state = {
-        isLoading: true,
-        dataBase: null,
+        dataBase: [],
         counter: 1
     }
 
@@ -15,49 +14,47 @@ class Container extends Component {
             .then(
                 (result) => {
                     this.setState({
-                        dataBase: result.cats
+                        dataBase: this.state.dataBase.concat[result.cats],
+                        isLoading: true
                     });
 
                 }
-            )
-            .then(() => {
-                setTimeout(() => {
-                    this.setState({
-                        isLoading: false
-                    });
-                }, 1000);
-            })
+            );
     }
     loadNextKittens = () => {
-        this.setState({ isLoading: true }, function afterChangeState() {
-            this.setState({ counter: (this.state.counter + 1) },
-                function afterCounterChange() {
-                    this.fetchData();
-                });
-        })
-
+        this.setState({ 
+            isLoading: true,
+            counter: this.state.counter++
+        });
+        
+        this.fetchData();
     }
 
 
     loadPrewKittens = () => {
         if (this.state.counter > 1) {
-            this.setState({ counter: (this.state.counter - 1) },
-                function afterCounterChange() {
-                    this.fetchData();
-                });
+           this.setState({ 
+                isLoading: true,
+                counter: this.state.counter--
+           });
+
+           this.fetchData();
         }
     }
 
 
     componentDidMount() {
-        this.fetchData();
+        loadNextKittens();
     }
 
     render() {
+        const {dataBase} = this.state;
+        
         return (
             <>
                 <div className="container">
-                    {this.state.isLoading ? (<div>Loading...</div>) : (<KittensList kittens={this.state.dataBase} />)}
+                    {this.dataBase.length > 0 && <Kittens>List kittens={} />}
+                    {this.state.isLoading && <div>Loading...</div>}
                 </div>
                 <div className="list-nav">
                     <button className="loadMore" onClick={this.loadPrewKittens}>Previous Page</button>
