@@ -14,7 +14,7 @@ class Container extends Component {
             .then(
                 (result) => {
                     this.setState({
-                        dataBase: this.state.dataBase.concat[result.cats],
+                        dataBase: this.state.dataBase.concat(result.cats),
                         isLoading: true
                     });
 
@@ -53,7 +53,7 @@ class Container extends Component {
         return (
             <>
                 <div className="container">
-                    {this.dataBase.length > 0 && <Kittens>List kittens={} />}
+                    {this.dataBase.length > 0 && <KittensList> kittens={dataBase} />}
                     {this.state.isLoading && <div>Loading...</div>}
                 </div>
                 <div className="list-nav">
