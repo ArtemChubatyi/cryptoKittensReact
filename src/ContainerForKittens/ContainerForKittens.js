@@ -4,7 +4,7 @@ import './ContainerForKittens.scss';
 
 
 
-class Container extends Component {
+class ContainerForKittens extends Component {
 
     state = {
         isLoading: true,
@@ -82,4 +82,4 @@ class Container extends Component {
 
 }
 
-export default Container;
+export default ContainerForKittens;

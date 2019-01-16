@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Container from './ContainerForKittens/ContainerForKittens';
+import ContainerForKittens from './ContainerForKittens/ContainerForKittens';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Container />
+        <ContainerForKittens />
       </div>
     );
   }

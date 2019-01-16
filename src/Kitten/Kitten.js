@@ -43,18 +43,19 @@ class Kitten extends Component {
             }
         };
 
+        const { name, category, price, img_url, id } = kitten;
 
         return (
             <div className='kittenCard'>
                 <div className='kittenCard__main' style={styles.background}>
                     <div className='kittenCard__main-container'>
                         <div className='kittenCard__image-container'>
-                            <img className='kittenCard__image' src={kitten.img_url} alt={kitten.id}></img>
+                            <img className='kittenCard__image' src={img_url} alt={id}></img>
                         </div>
-                        <KittenStatus price={kitten.price} />
+                        <KittenStatus price={price} />
                     </div>
                 </div>
-                <KittenDetails name={kitten.name} category={kitten.category} />
+                <KittenDetails name={name} category={category} />
             </div >
         );
     }
