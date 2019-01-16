@@ -1,14 +1,14 @@
 {
-  "main.css": "/cryptoKittensReact/static/css/main.8d74100d.chunk.css",
-  "main.js": "/cryptoKittensReact/static/js/main.cb63e61b.chunk.js",
-  "main.js.map": "/cryptoKittensReact/static/js/main.cb63e61b.chunk.js.map",
+  "main.css": "/cryptoKittensReact/static/css/main.51326fc2.chunk.css",
+  "main.js": "/cryptoKittensReact/static/js/main.e0528c96.chunk.js",
+  "main.js.map": "/cryptoKittensReact/static/js/main.e0528c96.chunk.js.map",
   "static/js/1.babd9482.chunk.js": "/cryptoKittensReact/static/js/1.babd9482.chunk.js",
   "static/js/1.babd9482.chunk.js.map": "/cryptoKittensReact/static/js/1.babd9482.chunk.js.map",
   "runtime~main.js": "/cryptoKittensReact/static/js/runtime~main.0cb8452f.js",
   "runtime~main.js.map": "/cryptoKittensReact/static/js/runtime~main.0cb8452f.js.map",
-  "static/media/App.scss": "/cryptoKittensReact/static/media/tag.36ec40fe.svg",
-  "static/css/main.8d74100d.chunk.css.map": "/cryptoKittensReact/static/css/main.8d74100d.chunk.css.map",
+  "static/media/KittenDetails.scss": "/cryptoKittensReact/static/media/tag.36ec40fe.svg",
+  "static/css/main.51326fc2.chunk.css.map": "/cryptoKittensReact/static/css/main.51326fc2.chunk.css.map",
   "index.html": "/cryptoKittensReact/index.html",
-  "precache-manifest.6d7999f286a5c47ee999cb05f0193541.js": "/cryptoKittensReact/precache-manifest.6d7999f286a5c47ee999cb05f0193541.js",
+  "precache-manifest.b391fdf1fd9636b9dd44821a634153d0.js": "/cryptoKittensReact/precache-manifest.b391fdf1fd9636b9dd44821a634153d0.js",
   "service-worker.js": "/cryptoKittensReact/service-worker.js"
 }
