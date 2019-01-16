@@ -1,4 +1,4 @@
-.kittenCard__status {
+.kittenCard-status {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,14 +23,14 @@
         transform: translateX(-50%);
         content: "";
     }
-    .icon {
+    &__icon {
         display: block;
         background-image: url(../images/tag.svg);
         background-size: contain;
         width: 17px;
         height: 17px;
     }
-    .sale, .price {
+    &__sale, &__price {
         color: #646261;
         font-weight: bold;
         font-size: 14px;
