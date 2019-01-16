@@ -42,6 +42,7 @@ class Kitten extends Component {
             }
         };
 
+
         return (
             <div className='kittenCard'>
                 <div className='kittenCard__main' style={styles.background}>

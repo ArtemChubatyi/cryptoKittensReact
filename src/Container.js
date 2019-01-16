@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import KittensList from './KittensList';
 
+
+
 class Container extends Component {
 
     state = {
@@ -8,6 +10,7 @@ class Container extends Component {
         dataBase: null,
         counter: 1
     }
+
 
     fetchData = () => {
         fetch("https://ma-cats-api.herokuapp.com/api/cats?page=" + this.state.counter + "&per_page=12")
@@ -49,9 +52,16 @@ class Container extends Component {
     }
 
 
-    componentDidMount() {
-        this.fetchData();
+    async componentDidMount() {
+        let res = await fetch("https://ma-cats-api.herokuapp.com/api/cats?page=" + this.state.counter + "&per_page=12");
+        let data = await res.json();
+        this.setState({
+            dataBase: data.cats,
+            isLoading: false
+        })
     }
+
+
 
     render() {
         return (
