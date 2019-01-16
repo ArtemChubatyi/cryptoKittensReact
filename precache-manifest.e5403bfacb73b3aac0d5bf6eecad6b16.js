@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/cryptoKittensReact/static/js/runtime~main.0cb8452f.js"
   },
   {
-    "revision": "e0528c96d3bed21a3cd4",
-    "url": "/cryptoKittensReact/static/js/main.e0528c96.chunk.js"
+    "revision": "d97ab389091a6f7dec72",
+    "url": "/cryptoKittensReact/static/js/main.d97ab389.chunk.js"
   },
   {
     "revision": "babd94826ba891d51a02",
     "url": "/cryptoKittensReact/static/js/1.babd9482.chunk.js"
   },
   {
-    "revision": "e0528c96d3bed21a3cd4",
-    "url": "/cryptoKittensReact/static/css/main.51326fc2.chunk.css"
+    "revision": "d97ab389091a6f7dec72",
+    "url": "/cryptoKittensReact/static/css/main.63f9e2f0.chunk.css"
   },
   {
-    "revision": "770658555724324c63381a70250564e0",
+    "revision": "4938ce34bf96c56f3c6ef6daa25c26b9",
     "url": "/cryptoKittensReact/index.html"
   }
 ];
