@@ -1,4 +1,5 @@
 import React from 'react';
+import './KittenStatus.scss';
 
 
 export default function KittenStatus({ price }) {

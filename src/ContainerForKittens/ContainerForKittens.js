@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import KittensList from './KittensList';
+import KittensList from '../KittensList/KittensList';
+import './ContainerForKittens.scss';
 
 
 

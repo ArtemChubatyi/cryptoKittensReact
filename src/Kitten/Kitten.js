@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import KittenStatus from './KittenStatus';
-import KittenDetails from './KittenDetails';
+import KittenStatus from '../KittenStatus/KittenStatus';
+import KittenDetails from '../KittenDetails/KittenDetails';
+import './Kitten.scss';
 
 class Kitten extends Component {
     render() {

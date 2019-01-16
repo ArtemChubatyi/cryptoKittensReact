@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import Container from './ContainerForKittens/ContainerForKittens';
+import SearchingPanel from './SearchingPanel'
+import './App.scss';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Container />
+        <SearchingPanel />
       </div>
     );
   }

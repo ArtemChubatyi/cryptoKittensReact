@@ -1,0 +1,17 @@
+.kittenCard__details {
+    &-name {
+        color: #2a2825;
+        text-transform: uppercase;
+        font-size: 19px;
+        padding: 3px;
+    }
+    &-stats {
+        padding: 3px;
+        border-top: 3px dotted #e7e6e4;
+        color: #82817d;
+        text-transform: capitalize;
+    }
+    &-icon {
+        background-image: url(../images/tag.svg);
+    }
+}

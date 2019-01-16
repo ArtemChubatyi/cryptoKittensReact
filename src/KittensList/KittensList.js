@@ -1,5 +1,5 @@
 import React from 'react';
-import Kitten from './Kitten';
+import Kitten from '../Kitten/Kitten';
 
 
 

@@ -1,0 +1,24 @@
+.kittenCard {
+    width: 238px;
+    margin-bottom: 20px;
+    &__main {
+        height: 286px;
+        border-radius: 10px;
+    }
+    &__main-container {
+        height: 100%;
+        position: relative;
+    }
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        width: 277px;
+        height: 332px;
+        transform: translateX(-14px);
+    }
+    &__image {
+        width: 100%;    
+    }
+}

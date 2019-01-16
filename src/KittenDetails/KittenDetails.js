@@ -1,4 +1,5 @@
 import React from 'react';
+import './KittenDetails.scss';
 
 
 export default function KittenStatus({ name, category }) {
