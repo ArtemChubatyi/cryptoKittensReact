@@ -1,14 +1,15 @@
 {
-  "main.css": "/cryptoKittensReact/static/css/main.63f9e2f0.chunk.css",
-  "main.js": "/cryptoKittensReact/static/js/main.d97ab389.chunk.js",
-  "main.js.map": "/cryptoKittensReact/static/js/main.d97ab389.chunk.js.map",
-  "static/js/1.babd9482.chunk.js": "/cryptoKittensReact/static/js/1.babd9482.chunk.js",
-  "static/js/1.babd9482.chunk.js.map": "/cryptoKittensReact/static/js/1.babd9482.chunk.js.map",
+  "main.css": "/cryptoKittensReact/static/css/main.24b334fd.chunk.css",
+  "main.js": "/cryptoKittensReact/static/js/main.ba330eb8.chunk.js",
+  "main.js.map": "/cryptoKittensReact/static/js/main.ba330eb8.chunk.js.map",
+  "static/js/1.15d5af5e.chunk.js": "/cryptoKittensReact/static/js/1.15d5af5e.chunk.js",
+  "static/js/1.15d5af5e.chunk.js.map": "/cryptoKittensReact/static/js/1.15d5af5e.chunk.js.map",
   "runtime~main.js": "/cryptoKittensReact/static/js/runtime~main.0cb8452f.js",
   "runtime~main.js.map": "/cryptoKittensReact/static/js/runtime~main.0cb8452f.js.map",
+  "static/css/main.24b334fd.chunk.css.map": "/cryptoKittensReact/static/css/main.24b334fd.chunk.css.map",
   "static/media/KittenDetails.scss": "/cryptoKittensReact/static/media/tag.36ec40fe.svg",
-  "static/css/main.63f9e2f0.chunk.css.map": "/cryptoKittensReact/static/css/main.63f9e2f0.chunk.css.map",
+  "static/media/App.scss": "/cryptoKittensReact/static/media/ether-diamond.f9374979.gif",
   "index.html": "/cryptoKittensReact/index.html",
-  "precache-manifest.e5403bfacb73b3aac0d5bf6eecad6b16.js": "/cryptoKittensReact/precache-manifest.e5403bfacb73b3aac0d5bf6eecad6b16.js",
+  "precache-manifest.85a4178c7426df263f701567243af421.js": "/cryptoKittensReact/precache-manifest.85a4178c7426df263f701567243af421.js",
   "service-worker.js": "/cryptoKittensReact/service-worker.js"
 }
