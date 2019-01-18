@@ -8,6 +8,9 @@ class Kitten extends Component {
         const { kitten } = this.props;
         const getBgColor = () => {
             function hashCode(stringValue) {
+                if (stringValue === null) {
+                    stringValue = 'deafault';
+                }
                 var hash = 0, i, chr;
                 if (stringValue.length === 0) return hash;
                 for (i = 0; i < stringValue.length; i++) {
@@ -43,19 +46,21 @@ class Kitten extends Component {
             }
         };
 
-        const { name, category, price, img_url, id } = kitten;
+        const { image_url, id, generation } = kitten;
+        const { current_price } = kitten.auction;
+        const { cooldown_index } = kitten.status;
 
         return (
             <div className='kittenCard'>
                 <div className='kittenCard__main' style={styles.background}>
                     <div className='kittenCard__main-container'>
                         <div className='kittenCard__image-container'>
-                            <img className='kittenCard__image' src={img_url} alt={id}></img>
+                            <img className='kittenCard__image' src={image_url} alt={id}></img>
                         </div>
-                        <KittenStatus price={price} />
+                        <KittenStatus price={(current_price / 1000000000000000000).toFixed(3)} />
                     </div>
                 </div>
-                <KittenDetails name={name} category={category} />
+                <KittenDetails name={id} gen={generation} cooldown={cooldown_index} />
             </div >
         );
     }

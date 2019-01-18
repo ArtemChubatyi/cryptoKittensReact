@@ -1,0 +1,16 @@
+.App {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.loader {
+    position: fixed;
+    top: 40%;
+    margin-top: -69px;
+    background-image: url(images/ether-diamond.gif);
+    background-size: contain;
+    width: 175px;
+    height: 138px;
+    margin: 0 auto;
+}
