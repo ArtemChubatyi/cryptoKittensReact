@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cryptoKittensReact/precache-manifest.85a4178c7426df263f701567243af421.js"
+  "/cryptoKittensReact/precache-manifest.9e106e3c680244becce274c5717d2a75.js"
 );
 
 workbox.clientsClaim();
