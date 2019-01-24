@@ -8,11 +8,11 @@ class App extends Component {
     isLoading: true,
     dataBase: null,
     counter: 0,
-    url: null
+    search: null
   }
 
   updateData = (value) => {
-    this.setState({ url: value },
+    this.setState({ isLoading: true, search: value },
       function afterChangingState() {
         this.fetchData();
       })
@@ -20,11 +20,11 @@ class App extends Component {
 
   fetchData = async () => {
     let offset = this.state.counter;
-    let filter = '';
-    if (this.state.url != null) {
-      filter = this.state.url;
+    let search = '';
+    if (this.state.search != null) {
+      search = this.state.search;
     }
-    let url = 'https://api.cryptokitties.co/v2/kitties?offset=' + offset + '&limit=12' + filter + '&parents=false&authenticated=false&include=sale&orderBy=current_price&orderDirection=asc&total=true'
+    let url = 'https://api.cryptokitties.co/v2/kitties?offset=' + offset + '&limit=12' + search + '&parents=false&authenticated=false&include=sale&orderBy=current_price&orderDirection=asc&total=true'
     let response = await fetch(url)
     let result = await response.json()
     this.setState({

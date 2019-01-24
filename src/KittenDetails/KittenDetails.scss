@@ -15,4 +15,12 @@
     &-icon {
         background-image: url(../images/tag.svg);
     }
+    &-category {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .details-icon {
+        margin-right: 4px;
+    }
 }
